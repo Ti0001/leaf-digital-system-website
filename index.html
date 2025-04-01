@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>树叶数字系统官网</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e6f7ff, #f0f8ff);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #039a70, #05cc95);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.4em;
+            margin: 15px 0 0;
+        }
+
+        nav {
+            background: #263238;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #05cc95;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .main-content {
+            padding: 60px 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro-section, .services-section, .contact-section {
+            margin-bottom: 60px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .intro-section h2, .services-section h2, .contact-section h2 {
+            color: #05cc95;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p, .services-section p, .contact-section p {
+            font-size: 1.3em;
+            line-height: 1.8;
+        }
+
+        .services-section .service {
+            background: #e6f9f4;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .services-section .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            color: #05cc95;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            font-size: 1.8em;
+        }
+
+        .leaf-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            filter: invert(57%) sepia(84%) saturate(394%) hue-rotate(128deg) brightness(93%) contrast(96%);
+        }
+
+        footer {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 15px;
+                margin-bottom: 10px;
+            }
+
+            .main-content {
+                padding: 40px 20px;
+            }
+
+            .intro-section, .services-section, .contact-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>树叶数字系统</h1>
+    <p>引领未来科技与运动的完美融合</p>
+</header>
+
+<nav>
+    <a href="#intro">公司简介</a>
+    <a href="#services">服务</a>
+    <a href="#contact">联系我们</a>
+</nav>
+
+<div class="main-content">
+
+    <section id="intro" class="intro-section">
+        <h2>公司简介</h2>
+        <p>树叶数字系统，致力于通过数字化技术推动运动、健康与教育行业的创新发展。我们为各类机构提供定制化的数字解决方案，助力管理者与用户在新时代享受高效、智能的服务。</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>我们的服务</h2>
+
+        <div class="service">
+            <h3><img src="https://www.svgrepo.com/show/376643/leaf.svg" alt="Leaf Icon" class="leaf-icon"> 数字化管理平台</h3>
+            <p>我们的平台专为机构管理人员设计，提供高效的授课管理、数据分析与运营监控，帮助管理者实现更精确的决策。</p>
+        </div>
+
+        <div class="service">
+            <h3><img src="https://www.svgrepo.com/show/376643/leaf.svg" alt="Leaf Icon" class="leaf-icon"> 会员服务平台</h3>
+            <p>为会员提供个性化的数据展示和分析，帮助他们更好地了解自己的运动表现与健康趋势。</p>
+        </div>
+
+        <div class="service">
+            <h3><img src="https://www.svgrepo.com/show/376643/leaf.svg" alt="Leaf Icon" class="leaf-icon"> 数据中台</h3>
+            <p>我们的可视化平台让管理员能够实时监控运动数据和课程安排，通过数据图表帮助决策者迅速做出战略决策。</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>联系我们</h2>
+        <p>你可以通过以下 QQ 与我们取得联系：<span id="qqNumber" onclick="copyQQNumber()">877163008</span></p>
+        <span id="copyMessage" style="display: none; color: #05cc95;">已复制到剪贴板</span>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 树叶数字系统 | 版权所有 | 设计：树叶科技</p>
+</footer>
+
+<script>
+    function copyQQNumber() {
+        const qqNumber = document.getElementById('qqNumber').textContent;
+        navigator.clipboard.writeText(qqNumber).then(() => {
+            const copyMessage = document.getElementById('copyMessage');
+            copyMessage.style.display = 'inline';
+            setTimeout(() => {
+                copyMessage.style.display = 'none';
+            }, 2000);
+        }).catch((err) => {
+            console.error('复制失败: ', err);
+        });
+    }
+</script>
+</body>
+</html>
+    
